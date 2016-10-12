@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+	<!-- Set render engine for 360 browser -->
+	<meta name="renderer" content="webkit">
+
+	<!-- No Baidu Siteapp-->
+	<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+	<link rel="icon" href="favicon.ico">
+
+	<!-- Add to homescreen for Chrome on Android -->
+	<meta name="mobile-web-app-capable" content="yes">
+
+	<!-- Add to homescreen for Safari on iOS -->
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="apple-mobile-web-app-title" content="The Olympic Games" />
+
+	<!-- Tile icon for Win8 (144x144 + tile color) -->
+	<meta name="msapplication-TileColor" content="#0e90d2">
+
+	<!-- <link rel="stylesheet" href="./css/amazeui.css"> -->
+	<link rel="stylesheet" href="./css/main.css">
+	<!-- <link rel="stylesheet" href="./css/amazeui.videojs.css"/> -->
+	<title>katteTeam</title>
+</head>
+
+<body class="M-dialogue">
+	<header class="fixed-header">
+		<h3>
+			聊天室
+		</h3>
+		<!--用户列表-->
+		<div class="user-icon">
+			在线用户
+			<div class="user-list">
+				<!--在线用户列表-->
+			</div>
+		</div>
+		<div class="my-nick">
+			您的昵称:
+			<span></span>
+		</div>
+	</header>
+	<div class="wrap">
+		<div class="container js-container">
+			<div class="dialogue-box">
+				<!--消息框-->
+			</div>
+			<footer class="ui-animate-delay ui-animate-moveT js-footer">
+				<div class="ipt-box">
+					<input type="text" class="ipt" id="ipt_msg">
+				</div>
+				<button class="send">发送</button>
+			</footer>
+		</div>
+	</div>
+	<!--输入用户信息-->
+	<div class="user-info">
+		<div class="user-nick">
+			<div class="welcome">聊天室欢迎您加入 <a class="btn" id="btn_join">点击进入</a></div>
+			
+			<div><input type="text" class="nick" id="ipt_nick" placeholder="输入昵称"></div>
+			<div><input type="text" class="img" id="ipt_icon" placeholder="头像地址" value='./img/icon/1.jpg'><img class="my-icon" src="./img/icon/1.jpg"alt=""></div>
+			<div class="icons">
+				<div class="choose"><img src="./img/icon/1.jpg" alt=""><i></i></div>
+				<div><img src="./img/icon/2.jpg" alt=""><i></i></div>
+				<div><img src="./img/icon/3.jpg" alt=""><i></i></div>
+				<div><img src="./img/icon/4.jpg" alt=""><i></i></div>
+				<div><img src="./img/icon/5.jpg" alt=""><i></i></div>
+				<div><img src="./img/icon/6.jpg" alt=""><i></i></div>
+				<div><img src="./img/icon/7.jpg" alt=""><i></i></div>
+				<div><img src="./img/icon/8.jpg" alt=""><i></i></div>
+				<div><img src="./img/icon/9.jpg" alt=""><i></i></div>
+				<div><img src="./img/icon/10.jpg" alt=""><i></i></div>
+				<div><img src="./img/icon/11.jpg" alt=""><i></i></div>
+				<div><img src="./img/icon/12.jpg" alt=""><i></i></div>
+				<div><img src="./img/icon/13.jpg" alt=""><i></i></div>
+				<div><img src="./img/icon/14.jpg" alt=""><i></i></div>
+				<div><img src="./img/icon/15.jpg" alt=""><i></i></div>
+				<div><img src="./img/icon/16.jpg" alt=""><i></i></div>
+				<div><img src="./img/icon/17.jpg" alt=""><i></i></div>
+				<div><img src="./img/icon/18.jpg" alt=""><i></i></div>
+				<div><img src="./img/icon/19.jpg" alt=""><i></i></div>
+				<div><img src="./img/icon/20.jpg" alt=""><i></i></div>
+				<div><img src="./img/icon/21.jpg" alt=""><i></i></div>
+				<div><img src="./img/icon/22.jpg" alt=""><i></i></div>
+				<div><img src="./img/icon/23.jpg" alt=""><i></i></div>
+				<div><img src="./img/icon/24.jpg" alt=""><i></i></div>
+				<div><img src="./img/icon/25.jpg" alt=""><i></i></div>
+				<div><img src="./img/icon/26.jpg" alt=""><i></i></div>
+				<div><img src="./img/icon/27.jpg" alt=""><i></i></div>
+				<div><img src="./img/icon/28.jpg" alt=""><i></i></div>
+				<div><img src="./img/icon/29.jpg" alt=""><i></i></div>
+				<div><img src="./img/icon/30.jpg" alt=""><i></i></div>
+				<div><img src="./img/icon/31.jpg" alt=""><i></i></div>
+				<div><img src="./img/icon/32.jpg" alt=""><i></i></div>
+				<div><img src="./img/icon/33.jpg" alt=""><i></i></div>
+				<div><img src="./img/icon/34.jpg" alt=""><i></i></div>
+				<div><img src="./img/icon/35.jpg" alt=""><i></i></div>
+				<div><img src="./img/icon/36.jpg" alt=""><i></i></div>
+				<div><img src="./img/icon/37.jpg" alt=""><i></i></div>
+				<div><img src="./img/icon/38.jpg" alt=""><i></i></div>
+				<div><img src="./img/icon/39.jpg" alt=""><i></i></div>
+				<div><img src="./img/icon/40.jpg" alt=""><i></i></div>
+				<div><img src="./img/icon/41.jpg" alt=""><i></i></div>
+				<div><img src="./img/icon/42.jpg" alt=""><i></i></div>
+				<div><img src="./img/icon/43.jpg" alt=""><i></i></div>
+				<div><img src="./img/icon/44.jpg" alt=""><i></i></div>
+				<div><img src="./img/icon/45.jpg" alt=""><i></i></div>
+				<div><img src="./img/icon/46.jpg" alt=""><i></i></div>
+				<div><img src="./img/icon/47.jpg" alt=""><i></i></div>
+				<div><img src="./img/icon/48.jpg" alt=""><i></i></div>
+				<div><img src="./img/icon/49.jpg" alt=""><i></i></div>
+				<div><img src="./img/icon/50.jpg" alt=""><i></i></div>
+				<div><img src="./img/icon/51.jpg" alt=""><i></i></div>
+				<div><img src="./img/icon/52.jpg" alt=""><i></i></div>
+				<div><img src="./img/icon/53.jpg" alt=""><i></i></div>
+				<div><img src="./img/icon/54.jpg" alt=""><i></i></div>
+				<div><img src="./img/icon/55.jpg" alt=""><i></i></div>
+				<div><img src="./img/icon/56.jpg" alt=""><i></i></div>
+				<div><img src="./img/icon/57.jpg" alt=""><i></i></div>
+				<div><img src="./img/icon/58.jpg" alt=""><i></i></div>
+				<div><img src="./img/icon/59.jpg" alt=""><i></i></div>
+				<div><img src="./img/icon/60.jpg" alt=""><i></i></div>
+				<div><img src="./img/icon/61.jpg" alt=""><i></i></div>
+				<div><img src="./img/icon/62.jpg" alt=""><i></i></div>
+				<!--<img src="./img/icon/choose.png" alt="">-->
+			</div>
+			
+		</div>
+	</div>
+
+</body>
+<script src="http://cdn.bootcss.com/jquery/2.1.2/jquery.min.js"></script>
+<script src="http://cdn.bootcss.com/socket.io/1.4.8/socket.io.min.js"></script>
+<script src="./js/socket.client.js"></script>
+
+<!--<script>
+	//过滤标签内容
+	function filterScript(value) {
+		value = value ? value.replace(/script/ig, '') : value;
+		return value;
+	} 
+</script>-->
+
+<script>
+	//本人信息 全局保存
+	var userInfo ={};
+
+
+	//定义服务器端回调事件
+	var client = new Client({
+		login:login,
+		logout:logout,
+		setUser:setUser,
+		client_msg:receive
+	});
+
+	
+	$(function(){
+		//发送
+		$(".send").click(function(){
+			var message = $("#ipt_msg").val();
+			message = filterScript(message);
+			client.send(message);//发送信息
+			send(message);
+		});
+
+		//进入
+		$("#btn_join").click(function(e){
+			var code = e.which;
+			var user = {
+				nick : $('#ipt_nick').val().replace(/\s/g, ""),
+				icon : $("#ipt_icon").val()
+			};
+			if(user_validate(user) ){
+				client.login(user);//登录
+			}
+		});
+
+		//回车发送
+		$('#ipt_msg').keyup(function(e){
+			var code = e.which;
+			var message = $("#ipt_msg").val();
+			if(code===13){
+				client.send(message);//发送信息
+				send(message);
+			}
+		});
+
+		//点击用户选择
+		$(".user-list").on('click','div',function(){
+			var nick = $(this).html();
+			$("#ipt_msg").val('@'+nick+' ');
+			$("#ipt_msg").focus();
+		});
+
+		//选择头像
+		$(".icons div").click(function(){
+			var src = $(this).find("img").attr("src");
+			$(".icons div").removeClass("choose");
+			$(this).addClass("choose");
+			
+			$(".my-icon").attr("src",src);
+			$("#ipt_icon").val(src);
+		});
+
+	});
+
+//--------------------------华丽的分割线--------------------------	
+
+	//滚动条滚动到最底部
+	function scrollToBoom(h){
+		var height = document.body.scrollHeight;
+		var top = $(window).scrollTop();
+		if(h){
+			$(window).scrollTop(top + h);
+		}else{
+			$(window).scrollTop(height);
+		}
+		
+	}
+	//发送信息
+	function send(msg){
+		var icon = userInfo.icon||"./img/user.jpg";
+		var html = '<div class="dialogue clearfix">';
+			html+=			'<div class="d-r">';
+			html+=			'<div class="bubble ui-animate ui-animate-bounce">';
+			html+=			'<span class="js-txt">'+ msg +'</span>';
+			html+=			'</div>';
+			html+=		'<div class="avatar ui-animate ui-animate-moveR">';
+			html+=		'<a href="javascript:;" class="img-box">';
+			html+=				'<img class="img-circle" src="'+icon+'" alt="">';
+			html+=			'</a>';
+			html+=			'<span class="">你</span>';
+			html+=		'</div>';
+			html+=	'</div>';
+			html+='</div>';
+		$(".dialogue-box").append(html);
+
+		//清空信息
+		$('#ipt_msg').val("");
+		//获取最后一条的高度
+		var h = $(".dialogue").last().outerHeight();
+		scrollToBoom(h);
+	}
+
+
+
+	//设置用户信息
+	function setUser(data){
+
+		if(data.validate.code === 0){
+			alert(data.validate.msg);
+			return;
+		}
+		var user = data.user;
+		var users = data.users;
+
+		//本人信息
+		userInfo.id = user.id;
+		userInfo.nick = user.nick;
+		userInfo.icon = user.icon;
+		//在线人员信息
+		var html='';
+		for(var id in users){
+			if(users.hasOwnProperty(id) && id != userInfo.id){
+				html+= '<div id='+id+'>'
+				html+=		users[id].nick;
+				html+= '</div>';
+			}
+		}
+		$(".user-list").append(html);
+
+		$('.my-nick span').html(userInfo.nick);//设置自己的昵称
+		$(".user-info").slideUp();
+	}
+
+	//登录回调
+	function login(data){
+		var user = data.user;
+		//发布系统信息
+		var html = '<div class="sys-msg">';
+			html+=		'-----------系统消息: ' + user.nick +'加入聊天室-----------';
+			html+= '</div>';
+		$(".dialogue-box").append(html);
+
+		//添加在线列表
+		if(userInfo.id){
+			var userhtml = '<div id=' + user.id + '>';
+			userhtml    +=		user.nick;
+			userhtml    += '</div>';
+			$(".user-list").append(userhtml);
+		}
+
+		//获取最后一条的高度
+		var h = $(".sys-msg").last().outerHeight();
+		scrollToBoom(h);
+	}
+
+	//登出回调
+	function logout(data){
+		var user = data.user;
+		if(user.nick){
+			var html = '<div class="sys-msg">';
+				html+=		'-----------系统消息: ' + user.nick +'离开聊天室-----------';
+				html+= '</div>';
+			$(".dialogue-box").append(html);
+			$('#'+user.id).remove();
+			//获取最后一条的高度
+			var h = $(".sys-msg").last().outerHeight();
+			scrollToBoom(h);
+		}
+	}
+	
+	//接收其他人信息
+	function receive(data){
+		var nick = data.user.nick;
+		var icon = data.user.icon||"./img/pc.jpg";
+		var html = '<div class="dialogue clearfix">';
+			html+=	'<div class="d-l">';
+			html+=	'<div class="avatar ui-animate ui-animate-moveL">';
+			html+=		'<a href="javascript:;" class="img-box">';
+			html+=			'<img class="img-circle" src="'+icon+'" alt="">';
+			html+=		'</a>';
+			html+=		'<span class="">'+data.user.nick+'</span>';
+			html+=		'</div>';
+			html+=		'<div class="bubble ui-animate ui-animate-bounce">';
+			html+=				'<span class="js-txt">'+data.msg.content+'</span>';
+			html+=			'</div>';
+			html+=		'</div>';
+			html+=	'</div>';
+		$(".dialogue-box").append(html);
+		//获取最后一条的高度
+		var h = $(".dialogue").last().outerHeight();
+		scrollToBoom(h);
+	}
+
+	//用户信息验证
+	function user_validate(user){
+		var nick = user.nick;
+		var icon = user.icon;
+		if(nick == "") {
+			alert('昵称不可为空');
+			return false;
+		}
+		if(nick.length>8) {
+			alert('昵称字符应小于8个');
+			return false;
+		}
+		if(icon ==""){
+			alert("头像为空默认是只狗！");
+		}
+		return true;
+	}
+
+	//发送消息验证
+	//function msg_validate(msg){
+		//value = value ? value.replace(/script/ig, '') : value;
+		//return value;
+	//}
+
+	function filterScript(value) {
+		value = value ? value.replace(/script/ig, '') : value;
+		return value;
+	} 
+</script>
+
+</html>

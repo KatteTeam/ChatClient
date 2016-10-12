@@ -1,0 +1,546 @@
+/*
+ *--------------------
+ *made by miller 2016/09/10 ^ω^
+ *dialogue stylesheets
+ *version 1.0:Create styles;
+ *--------------------
+ */
+/*css reset*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend, keygen, table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video, input, textarea, select, button { margin:0; padding:0; border:none; border:0; outline:0; font-size:100%; font:inherit; vertical-align:baseline;cursor:default;}
+html, body, form, fieldset, p, div, h1, h2, h3, h4, h5, h6 { -webkit-text-size-adjust:none;}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display:block;}
+ol, ul { list-style:none;}
+sup, sub {font-size:83%;}
+blockquote, q { quotes:none;}
+blockquote:before, blockquote:after, q:before, q:after { content:''; content:none;}
+del { text-decoration:line-through;}
+ins, u, s, a, a:hover { text-decoration:none;}
+pre, code, kbd, samp { font-family:inherit;}
+em, i, cite, var, address, dfn { font-style:normal;}
+h1, h2, h3, h4, h5, h6, strong, b { font-weight:normal;}
+h1, h2, h3, h4, h5, h6 { font-family:\5fae\8f6f\96c5\9ed1;}
+html, body, fieldset, img, iframe, abbr { border:0;}
+table { border-collapse:collapse; border-spacing:0;}
+caption, th { text-align:left; font-weight:normal;}
+textarea{ overflow:auto; resize:none;}
+label, summary { cursor:default;}
+a, button, label { cursor:pointer;}
+textarea, input ,button, select { -webkit-appearance:none; border-radius:0;}
+input[type=radio] { -webkit-appearance:radio; border-radius:100%;}
+input[type=checkbox] { -webkit-appearance:checkbox;}
+textarea, input { box-sizing:content-box;}
+body, textarea, input, button, select, keygen, legend { font:12px/1.14 arial,\5b8b\4f53,helvetica,sans-serif; color:#666;}
+html { _background-image:url(about:blank); _background-attachment:fixed;}
+::-ms-clear, ::-ms-reveal{ display:none;}
+body, html { background-color:#fff;font-family: 'Microsoft Yahei';}
+a { color:#666; -webkit-tap-highlight-color:rgba(0,0,0,0);}
+img {display: block;}
+video {width: 100%;background-color: #000;}
+* {-webkit-box-sizing:border-box;box-sizing:border-box;}
+.active {display: block!important;}
+/*animation*/
+/* base */
+.ui-animate { -webkit-animation-duration:.8s; -webkit-animation-fill-mode:forwards; animation-duration:.8s; animation-fill-mode:forwards;}
+.ui-animate-delay { -webkit-animation-duration:.8s; -webkit-animation-fill-mode:forwards; animation-duration:.8s; animation-fill-mode:forwards; }
+/*bounce*/
+@-webkit-keyframes bounce {
+	0% { -webkit-transform:translateY(100%); transform:translateY(100%); opacity: 0}
+	20%, 50%, 80%, 100% { -webkit-transform:translateY(0); transform:translateY(0);opacity: 1}
+	40% { -webkit-transform:translateY(-10px); transform:translateY(-10px);opacity: 1}
+	60% { -webkit-transform:translateY(-5px); transform:translateY(-5px);opacity: 1}
+}
+
+@keyframes bounce {
+	0% { -webkit-transform:translateY(100%); transform:translateY(100%); opacity: 0}
+	20%, 50%, 80%, 100% { -webkit-transform:translateY(0); transform:translateY(0);opacity: 1}
+	40% { -webkit-transform:translateY(-10px); transform:translateY(-10px);opacity: 1}
+	60% { -webkit-transform:translateY(-5px); transform:translateY(-5px);opacity: 1}
+}
+
+.ui-animate-bounce { -webkit-animation-name:bounce; animation-name:bounce;}
+/*fade*/
+@-webkit-keyframes fadeIn {
+	0% { opacity:0;}
+	100% { opacity:1;}
+}
+
+@keyframes fadeIn {
+	0% { opacity:0;}
+	100% { opacity:1;}
+}
+
+.ui-animate-fadeIn { -webkit-animation-name:fadeIn; animation-name:fadeIn;}
+
+/*L-R*/
+@-webkit-keyframes moveL {
+	0% {-webkit-transform: translateX(-100%);transform: translateX(-100%);}
+	70% {-webkit-transform: translateX(0);transform: translateX(0);}
+}
+
+@keyframes moveL {
+	0% {-webkit-transform: translateX(-100%);transform: translateX(-100%);}
+	70% {-webkit-transform: translateX(0);transform: translateX(0);}
+}
+
+.ui-animate-moveL { -webkit-animation-name:moveL; animation-name:moveL; }
+/*R-L*/
+@-webkit-keyframes moveR {
+	0% {-webkit-transform: translateX(100%);transform: translateX(100%);}
+	70% {-webkit-transform: translateX(0);transform: translateX(0);}
+}
+
+@keyframes moveR {
+	0% {-webkit-transform: translateX(100%);transform: translateX(100%);}
+	70% {-webkit-transform: translateX(0);transform: translateX(0);}
+}
+
+.ui-animate-moveR { -webkit-animation-name:moveR; animation-name:moveR; }
+/*B-T*/
+@-webkit-keyframes moveT {
+	0% {-webkit-transform: translateY(100%);transform: translateY(100%);}
+	50% {-webkit-transform: translateY(100%);transform: translateY(100%);}
+	70% {-webkit-transform: translateX(0);transform: translateX(0);}
+}
+
+@keyframes moveT {
+	0% {-webkit-transform: translateY(100%);transform: translateY(100%);}
+	50% {-webkit-transform: translateY(100%);transform: translateY(100%);}
+	70% {-webkit-transform: translateX(0);transform: translateX(0);}
+}
+
+.ui-animate-moveT { -webkit-animation-name:moveT; animation-name:moveT; }
+/*normal*/
+.unmovable {
+	height: 100%;
+	overflow: hidden;
+}
+html, body{
+	height: 100%;
+	font-family:'Helvetica Neue', Helvetica, 'Lucida Grande', Arial, 'Hiragino Sans GB', 微软雅黑, 'WenQuanYi Micro Hei', STHeiti, SimSun, sans-serif;
+	-webkit-font-smoothing:antialiased;
+	color: #333;
+}
+
+header.fixed-header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	padding: 10px;
+	height: 40px;
+	text-align: center;
+	background: -moz-linear-gradient(to top, #49494b, #302f35);
+    background: -webkit-linear-gradient(to top, #49494b, #302f35);
+    background: -o-linear-gradient(to top, #49494b, #302f35);
+    background: linear-gradient(to top, #49494b, #302f35);
+    z-index: 2;
+    box-shadow: 0px 3px 20px rgba(0,0,0,0.3);
+}
+
+header.fixed-header h3{
+	display: inline-block;
+	font-weight: 700;
+	font-size: 16px;
+	color:#fff;
+}
+
+.wrap {
+    background: #e6e6e6;
+    margin: 0 auto;
+    min-height: 100%;
+	padding: 10px;
+	padding-top: 40px;
+	padding-bottom: 60px;
+}
+
+p {
+	display: inline-block;
+}
+.container {
+	height: 100%;
+}
+
+@media screen and (min-width:800px) {
+	.wrap {
+		width: 800px;
+		padding: 10px 20px;
+		padding-top: 40px;
+	}
+	header.fixed-header {
+		width: 800px;
+		left: 50%;
+		margin-left: -400px;
+	}
+}
+.wrap {
+	position: relative;
+}
+.time {
+	padding: 10px;
+	text-align: center;
+}
+
+.time span {
+	display: inline-block;
+	padding: 5px;
+	border-radius: 4px;
+	background-color: rgba(0,0,0,0.2);
+	color: #fff;
+}
+
+/* slightly enhanced, universal clearfix hack */
+.clearfix:after {
+     visibility: hidden;
+     display: block;
+     font-size: 0;
+     content: " ";
+     clear: both;
+     height: 0;
+}
+.clearfix { display: inline-block; }
+/* start commented backslash hack \*/
+* html .clearfix { height: 1%; }
+.clearfix { display: block; }
+/* close commented backslash hack */
+
+.dialogue-box {
+	padding-bottom: 50px;
+}
+
+.dialogue {
+	padding-top: 22px;
+	padding-bottom: 5px;
+	overflow: hidden;
+}
+
+.d-l {
+	float: left;
+}
+
+.d-r {
+	float: right;
+}
+
+.avatar {
+	width: 40px;
+	text-align: center;
+	display: inline-block;
+}
+
+.img-box,
+.img-box img {
+	display: block;
+}
+
+img.emoticon {
+	display: inline-block;
+	vertical-align: text-bottom;
+}
+
+.bubble,.bubble-img {
+	position: relative;
+	display: inline-block;
+	vertical-align: top;
+	max-width:180px;
+	padding: 15px;
+	border-radius: 6px;
+	opacity: 0;
+	box-shadow: 1px 1px 10px rgba(0,0,0,0.2);
+}
+
+.bubble img.js-img,.bubble-img img.js-img  {
+	width: 100%;
+}
+
+.bubble:after,.bubble-img:after {
+	content: '';
+	position: absolute;
+	top: 12px;
+}
+
+.d-l .bubble,.d-l .bubble-img {
+	margin-left: 15px;
+	background-color: #fff;
+}
+
+.d-l .bubble:after,.d-l .bubble-img:after {
+	left: -7px;
+	border-top:8px solid transparent;
+	border-right: 8px solid #fff;
+	border-bottom: 8px solid transparent;
+}
+
+.d-r .bubble,.d-r .bubble-img {
+	margin-right: 15px;
+	background-color: #91cf52;
+}
+
+.d-r .bubble:after,.d-r .bubble-img:after {
+	right: -7px;
+	border-top:8px solid transparent;
+	border-left: 8px solid #91cf52;
+	border-bottom: 8px solid transparent;
+}
+
+.img-circle {
+	width: 100%;
+	border-radius: 100%;
+	overflow: hidden;
+	margin-bottom: 5px; 
+}
+
+.user-name {
+	color: #e4e4e4;
+}
+
+.full-box {
+	/*display: none;*/
+	z-index: 3;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	/*bottom: 0;*/
+	left: 0;
+}
+
+.img-full,.video-full {
+	/*position: absolute;*/
+	/*bottom: 0;*/
+	/*height: 100%;*/
+	/*left: 0;*/
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,.5);
+	text-align: center;
+}
+
+.img-full:after,.video-full:after {
+	content: '';
+	display: inline-block;
+	vertical-align: middle;
+	height: 100%;
+	width: 0;
+	height: 100%;
+	overflow: hidden;
+}
+
+.img-full img,.video-full video {
+	/*display: inline-block;
+	vertical-align: middle;*/
+	max-width: 100%;
+	position: absolute;
+	margin:auto;
+	left: 0;
+	right: 0;
+	top:0;
+	bottom:0;
+}
+@media (min-width: 768px) {
+	.img-full img,.video-full video {
+		max-width: 800px;
+	}
+}
+
+.video-full video {
+	max-width: 800px;
+}
+
+footer {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	background-color: #fff;
+	height: 50px;
+	padding: 10px;
+	border-top-left-radius: 4px;
+	border-top-right-radius: 4px;
+	width: 100%;
+	text-align: center;
+}
+
+.more {
+	display: inline-block;
+	margin: 0 10px;
+	padding: 8px;
+	font-size: 12px;
+	background-color: #2BB9BD;
+	border-radius: 12px;
+	color:#fff;
+}
+
+.send {
+	float: right;
+	width: 12%;
+	padding: 8px;
+	background-color: #2BB9BD;
+	font-size: 12px;
+	color:#fff;
+}
+
+.ipt-box {
+	float: left;
+	width: 76%;
+	margin:0 5%;
+}
+
+.ipt {
+	display: block;
+	width: 90%;
+	margin-right: 10%;
+	padding: 3px 10px;
+	height: 24px;
+	border-bottom: 1px solid #ccc;
+	margin-bottom: -1px;
+	position: relative;
+	bottom: 1px;
+}
+
+.close {
+	width: 32px;
+	height: 32px;
+	position: absolute;
+	right: 10px;
+	top: 10px;
+	background-image: url(../img/close.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.sys-msg{
+	text-align: center;
+	line-height: 26px;
+}
+
+.user-info{
+	position:fixed;
+	background-color:rgba(0,0,0,.5);
+	width: 800px;
+    left: 50%;
+    margin-left: -400px;
+	height:100%;
+	top:0;
+	text-align: center;
+	z-index:10
+}
+
+.user-info .btn{
+	width:120px;
+	height:26px;
+	border-radius: 8px;
+	margin-top:5px;
+	color:red;
+}
+
+.user-info .img{
+	width:256px;
+}
+
+.user-nick{
+	color:#ccc;
+	position:absolute;
+	top:80px;
+	width:800px;
+	left:50%;
+	margin-left:-400px;
+	font-size:25px;
+}
+.user-nick div{
+	padding:12px;
+}
+.user-nick input{
+	background-color:rgba(0,0,0,0);
+	color:red;
+	text-align: center;
+	font-size:26px;
+	height:30px;
+	border:0;
+	border-bottom:1px solid #fff;
+}
+.user-nick .nick{
+	width:220px;
+}
+
+.user-nick .img{
+	width:160px;
+}
+
+.user-list{
+	background-color: #ededed;
+	position:absolute;
+	top:20px;
+	left:0;
+	width:150px;
+	display:none;
+}
+
+.user-icon{
+	background-color: #ededed;
+	line-height:22px;
+	width:150px;
+	position:relative;
+	top:-20px;
+}
+
+.user-icon:hover .user-list{
+	max-height:450px;
+	overflow-y:auto; 
+	display: block;
+}
+
+.user-list div:hover{
+	background-color: black;
+	color:white;
+}
+
+.my-nick{
+	color: white;
+    line-height: 22px;
+    width: 150px;
+    position: absolute;
+    top: 8px;
+    right: 0;
+}
+
+.icons{
+	width: 410px;
+	text-align: center;
+	margin:0 auto;
+	height:400px;
+	overflow-y: auto;
+
+}
+.icons div,.my-icon{
+	display: inline-block;
+	width:60px;
+	height:60px;
+	border-radius: 30px;
+	position: relative;
+	padding:0;
+	font-size:0;
+	
+}
+.icons img{
+	width:100%;
+	border-radius: 30px;
+	cursor: pointer;
+}
+
+
+.choose i{
+	position:absolute;
+	background:url('../img/icon/choose.png') no-repeat center center;
+	background-size: 100%;
+	right:0;
+	bottom:0;
+	width:20px;
+	height:20px;
+}
+
+.welcome{
+	/*line-height: */
+}
