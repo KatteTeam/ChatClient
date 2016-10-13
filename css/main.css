@@ -544,3 +544,8 @@ footer {
 .welcome{
 	/*line-height: */
 }
+
+/*修复文本溢出问题*/
+.dialogue span.js-txt {
+	word-wrap: break-word;
+}
